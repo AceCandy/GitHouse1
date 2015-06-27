@@ -1,0 +1,33 @@
+/* CSS declarations go here */
+
+body {
+  background: url('pattern_130.gif');
+}
+
+.equal, .equal > div[class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panel, .panel-heading, .panel-body {
+  position: relative;
+  background: #f7f7f7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 7px rgba(0,0,0,.5);
+}
+
+.content {
+  /*padding: 10px;*/
+}
+
+.loginTemp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
