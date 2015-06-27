@@ -1,9 +1,11 @@
-## Meteor job-collection (+ file-collection) Sample App
+## Meteor job-collection (+ file-collection)  App FIX
 
-If you are looking for just the basic Meteor file-collection sample app, it can now be found here: https://github.com/vsivsi/meteor-file-sample-app
+根据此项目改进而来：https://github.com/vsivsi/meteor-file-sample-app
 
-This demo app uses [file-collection's](https://atmospherejs.com/vsivsi/file-collection) built-in support for [Resumable.js](http://www.resumablejs.com/) to allow drag and drop uploading of image files into a basic thumbnail gallery. It uses [job-collection](https://atmospherejs.com/vsivsi/job-collection) to automate creation of thumbnail images for each uploaded file. Besides the gallery view, the sample app also has "file" and "job" views to observe and manage the underlying file and job collections directly and given examples for how basic UI controls for these packages can be implemented.
+功能：相对于上面的meteor-file-sample-app项目来说有2点改进。
+1、限制用户在登录后才能进行图片上传；
+2、图片生成可在上传时指定生成大小，默认为150*150。
 
-To set-up: just clone this repo, cd into its directory and run `meteor`, once it starts up point your browser at `http://localhost:3000/`.
+设置: 下载此项目后，cd进入当前项目所在目录，运行Meteor，启动之后在浏览器中输入网址为 `http://localhost:3000/`.
 
-You will also need to have [graphicsmagick](http://www.graphicsmagick.org/) installed on the server for use in making the image thumbnails. This may be easily installed on Mac OS X using MacPorts or Brew, and on Linux using your preferred package manager.
+注意：您仍然需要下载Graphicsmagick在服务器上安装来用于显示图像略缩图。
